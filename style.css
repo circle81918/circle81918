@@ -1,0 +1,146 @@
+body
+{
+    background: #151515 url("./images/1.jpg") no-repeat fixed left bottom;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, scans-serif;
+}
+header
+{
+    padding: 50px 30px 80px;   
+}
+.main
+{
+    width: 90%;
+    margin: 0 auto;
+}
+.site-title
+{
+    margin: 50px 0 40px;
+    font-size: 48px;
+}
+.site-description
+{
+    margin-bottom: 30px;
+    color: #888;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+.button
+{
+    display: inline-block;
+    width: 100px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: darkseagreen;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: white;
+}
+.button:hover
+{
+    opacity: 0.9;
+}
+.buttons .button
+{
+    margin: 10px;
+}
+.picBtn
+{
+    margin: 10px 20px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+    padding: 10px 0 0 0;
+    background-color:darkgray;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    color: white;
+}
+.picBtn:hover
+{
+    opacity: 0.9;
+}
+
+
+.heading
+{
+    position: relative;
+    display: inline-block
+    margin: 5px 0 5px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+
+p
+{
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, scans-serif;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 2px;
+    padding: 10px 10px 0px;
+}
+li
+{
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 22px;
+}
+.work
+{
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #383634;
+}
+.works-wrapper
+{
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+    box-shadow:1px 1px 5px gray;
+}
+.slide
+{
+    width: 100%;
+    display: none;
+}
+img
+{
+    max-width: 100%;
+}
+.nav
+{
+    display:inline-block;
+}
+#prev
+{
+    float:left;
+    width:40px;
+    height: 40px;
+    background:url(./image/prev.png) no-repeat;
+}
+#prev:hover
+{
+    opacity: 0.9;
+}
+#next
+{
+    float: left;
+    width:40px;
+    height: 40px;
+    background:url(./image/next.png) no-repeat;
+}
+#next:hover
+{
+    opacity: 0.9;
+}

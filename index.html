@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#btn1').on('click',function(){
+                    $('#sub1').slideToggle(1000);
+                    if($('#btn1').text() == '展開圖片')
+                       $('#btn1').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn2').on('click',function(){
+                    $('#sub2').slideToggle(1000);
+                    if($('#btn2').text() == '展開圖片')
+                       $('#btn2').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn3').on('click',function(){
+                    $('#sub3').slideToggle(1000);
+                    if($('#btn3').text() == '展開圖片')
+                       $('#btn3').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn4').on('click',function(){
+                    $('#sub4').slideToggle(1000);
+                    if($('#btn4').text() == '展開圖片')
+                       $('#btn4').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn5').on('click',function(){
+                    $('#sub5').slideToggle(1000);
+                    if($('#btn5').text() == '展開圖片')
+                       $('#btn5').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn6').on('click',function(){
+                    $('#sub6').slideToggle(1000);
+                    if($('#btn6').text() == '展開圖片')
+                       $('#btn6').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn7').on('click',function(){
+                    $('#sub7').slideToggle(1000);
+                    if($('#btn7').text() == '展開圖片')
+                       $('#btn7').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+                $('#btn8').on('click',function(){
+                    $('#sub8').slideToggle(1000);
+                    if($('#btn8').text() == '展開圖片')
+                       $('#btn8').text('收合圖片');
+                    else
+                       $('#btn1').text('展開圖片');
+                })
+            });
+            $(function(){
+                $("#goTop").click(function(){
+                    $('html,body').animate({scrollTop:0},900);
+                    return false;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="site-title">Portfolio</h1>
+            <p class="site-description"> 作品集包含碩士論文與求學期間所完成過的課程專案<br>介紹每個專案的目的與所使用到的技術</p>
+            <div class="buttons">
+                <a class="button" href="">個人簡歷</a>
+                <a class="button" href="#paper">碩士論文</a>
+                <a class="button" href="#projects">課程專題</a>
+            </div>
+        </header>
+        <div class="main">
+            <section class="work" id="job">
+                <h2 class="heading">工作專案</h2>
+                <div class="works-wrapper">
+                    <p>視覺化晶片接腳瑕疵檢測</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div >將晶片的pin腳資訊轉換成三維模型,提供使用者直接透過介面檢測晶片瑕疵</div></li>
+                        <li>技術 :
+                            <div>C++,OpenGL,winsock</div></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="work" id="paper">
+                <h2 class="heading">碩士論文</h2>
+                <div class="works-wrapper">
+                    <p>自動配件切割與互動式試戴系統</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>利用人臉偵測與Grabcut演算法切割出配件前景,再透過深度資訊偵測人臉朝向後,將切割下來的配件放置在使用者適當的位置上,並設計介面提供使用者做選取與展示</div></li>
+                        <li>技術 :
+                            <div>C++,Qt,OpenCV,Dlib,kinect</div></li>
+                    </ul>
+                    <div class="slide" id="sub1">
+                        <div class="imageBox">
+                            <img id="img1" src="image/paper/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(0);"></div>
+                            <div id="next" onclick="next(0);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn1">展開圖片</div>
+                </div>
+            </section>
+            <section class="work" id="projects">
+                <h2 class="heading">課程專案</h2>
+                <div class="works-wrapper">
+                    <p>計算型智慧-自走車模擬程式</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>實作三種人工智慧演算法,分別為模糊系統、基因演算法、粒子群最佳化,透過資料集的訓練使自走車得以通過障礙</div></li>
+                        <li>技術 :
+                            <div>JAVA</div></li>
+                    </ul>
+                    <div class="slide" id="sub2">
+                        <div class="imageBox">
+                            <img id="img2" src="image/work1/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(1);"></div>
+                            <div id="next" onclick="next(1);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn2">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>類神經網路-多種演算法實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>實作感知機、放射狀基底函數網路、hopfield遞迴網路等數種類神經網路架構,並設計相對應的介面展示</div></li>
+                        <li>技術 :
+                            <div>JAVA</div></li>
+                    </ul>
+                    <div class="slide" id="sub3">
+                        <div class="imageBox">
+                            <img id="img3" src="image/work2/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(2);"></div>
+                            <div id="next" onclick="next(2);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn3">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>智慧型監控-影像處理多種演算法實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>利用OpenCV實作前景偵測、人臉辨識、步態分析等多種影像處理技術,並擔任課程助教進行教學</div></li>
+                        <li>技術 :
+                            <div>C/C++,OpenCV</div></li>
+                    </ul>
+                    <div class="slide" id="sub4">
+                        <div class="imageBox">
+                            <img id="img4" src="image/work3/0.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(3);"></div>
+                            <div id="next" onclick="next(3);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn4">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>Linux-新增與修改kernel system code</p>
+                    <ul>
+                        <li>專案內容 :
+                             <div><ul><li>新增一個system call用來監控系統中process的記憶體使用狀況與其相對應的權限</li><li>實作process的等待與喚醒機制,將需要等待的process放入wait queue再透過process的pid將其喚醒</li></ul></div></li>
+                        <li>技術 :
+                            <div>C</div></li>
+                    </ul>
+                    <div class="slide" id="sub5">
+                        <div class="imageBox">
+                            <img id="img5" src="image/work4/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(4);"></div>
+                            <div id="next" onclick="next(4);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn5">展開圖片</div>
+                </div >
+                <div class="works-wrapper">
+                    <p>計算機圖學-模型的視角切換</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>
+                                <ul><li>利用OpenGL學習模型在三維空間的運動,並能根據使用者指定的視角產生相對應的變化。</li>
+                                    <li>模擬賽車遊戲與其他電腦控制的賽車競賽,且能透過切換視角觀看賽場的各個方向</li>
+                                </ul>
+                            </div></li>
+                        <li>技術 :
+                            <div>C,OpenGL</div></li>
+                    </ul>
+                    <div class="slide" id="sub6">
+                        <div class="imageBox">
+                            <img id="img6" src="image/work5/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(5);"></div>
+                            <div id="next" onclick="next(5);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn6">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>電腦網路-線上聊天室實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>
+                                學習如何透過socket與另一個使用者進行連線、接收訊息與檔案傳輸,並撰寫server端與client端的程式碼。
+                            </div></li>
+                        <li>技術 :
+                            <div>JAVA,winsock</div></li>
+                    </ul>
+                    <div class="slide" id="sub7">
+                        <div class="imageBox">
+                            <img id="img7" src="image/work6/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(6);"></div>
+                            <div id="next" onclick="next(6);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn7">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>硬體描述語言-多種小遊戲實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>
+                            1. 影像壓縮<br>
+                            2. 消方塊<br>
+                            3. 小綠人<br>
+                            4. 跳舞機
+                            </div></li>
+                        <li>技術 :
+                            <div>C,Verilog</div></li>
+                    </ul>
+                    <div class="slide" id="sub8">
+                        <div class="imageBox">
+                            <img id="img8" src="image/work7/1.jpg">
+                        </div>
+                        <div class="nav">
+                            <div id="prev" onclick="prev(7);"></div>
+                            <div id="next" onclick="next(7);"></div>
+                        </div>
+                    </div>
+                    <div class="picBtn" id="btn8">展開圖片</div>
+                </div>
+                <div class="works-wrapper">
+                    <p>平行計算-多種演算法實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>
+                                利用cuda實作LCS,ASPS,closet pair 等多種演算法,透過shared memory提高存取效率並比較平行前後的效能差異
+                            </div></li>
+                        <li>技術 :
+                            <div>C,CUDA</div></li>
+                    </ul>
+                </div>
+                <div class="works-wrapper">
+                    <p>演算法-多種演算法實作</p>
+                    <ul>
+                        <li>專案內容 :
+                            <div>
+                                <ul><li>2D rank finding problem(採用divide and conquer)</li>
+                                <li>closest pair problem(採用divide and conquer) </li>
+                                <li>optimal merge(採用greedy method)</li>
+                                <li>knapsack problem(採用depth-fist-search)</li>
+                                <li>traveling salesperson problem(採用dynamic programming)</li>
+                                <li>8 puzzle problem(採用hill climbing)</li>
+                                <li>LCS(採用dynamic programming)</li>
+                            </ul>
+                            </div></li>
+                        <li>技術 :
+                            <div>C,JAVA</div></li>
+                    </ul>
+                </div>
+                <div><p style="text-align: center;"><a id="goTop">Go Top</a></p></div>
+            </section>
+
+        </div>
+
+    <script>    
+        var img = ['img1','img2','img3','img4','img5','img6','img7','img8'];
+        var current = [0,0,0,0,0,0,0,0];
+        var changeImage = function(index,num)
+        {
+            var imagePath;
+            switch(index)
+            {
+                case 0:
+                    imagePath = ['./image/paper/1.jpg','./image/paper/2.jpg','./image/paper/3.jpg','./image/paper/4.jpg','./image/paper/5.jpg','./image/paper/6.jpg','./image/paper/7.jpg'];
+                    break;
+                case 1:
+                    imagePath = ['./image/work1/1.jpg','./image/work1/2.jpg'];
+                    break;
+                case 2:
+                    imagePath = ['./image/work2/1.jpg','./image/work2/2.jpg','./image/work2/3.jpg','./image/work2/4.jpg'];
+                    break;
+                case 3:
+                    imagePath = ['./image/work3/0.jpg','./image/work3/1.jpg','./image/work3/2.jpg','./image/work3/3.jpg','./image/work3/4.jpg','./image/work3/5.jpg'];
+                    break;
+                case 4:
+                    imagePath = ['./image/work4/1.jpg','./image/work4/2.jpg'];
+                    break;
+                case 5:
+                    imagePath = ['./image/work5/1.jpg','./image/work5/2.jpg','./image/work5/3.jpg','./image/work5/4.jpg'];
+                    break;
+                case 6:
+                    imagePath = ['./image/work6/1.jpg','./image/work6/2.jpg'];
+                    break;
+                case 7:
+                    imagePath = ['./image/work7/1.jpg','./image/work7/2.jpg'];
+                    break;
+                
+                
+            }
+            if(current[index]+num >= 0 && current[index]+num < imagePath.length)
+            {
+                current[index] += num;
+                document.getElementById(img[index]).src= imagePath[current[index]];
+            }
+        };
+        
+        var next = function(index)
+        {
+            changeImage(index,1);
+        };
+        
+        var prev = function(index)
+        {
+            changeImage(index,-1);
+        };
+    </script>
+    </body>
+</html>
